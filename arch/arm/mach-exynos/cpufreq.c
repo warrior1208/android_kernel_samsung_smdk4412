@@ -37,6 +37,14 @@
 #include <mach/sec_debug.h>
 #endif
 
+#ifdef CONFIG_CPU_FREQ_GOV_SLIM
+int graphics_boost = 6;
+#endif
+
+#ifdef CONFIG_CPU_FREQ_GOV_SLIM
+        graphics_boost = pwr->active_pwrlevel;
+#endif
+
 struct exynos_dvfs_info *exynos_info;
 
 static struct regulator *arm_regulator;
