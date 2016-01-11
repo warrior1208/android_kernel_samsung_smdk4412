@@ -14,10 +14,6 @@
  * This should be same with cpufreq_frequency_table
 */
 
-#ifdef CONFIG_CPU_FREQ_GOV_SLIM
-extern int graphics_boost;
-#endif
-
 enum cpufreq_level_index {
 	L0, L1, L2, L3, L4,
 	L5, L6, L7, L8, L9,
